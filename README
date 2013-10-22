@@ -1,0 +1,53 @@
+NAME
+    Pod::Weaver::Section::Bugs::DefaultRT - Add a BUGS section to refer to
+    bugtracker (or RT as default)
+
+SYNOPSIS
+    In your "weaver.ini":
+
+     [Bugs::DefaultRT]
+
+    To specify a bugtracker other than RT (<http://rt.cpan.org>), in your
+    dist.ini:
+
+     [MetaResources]
+     bugtracker=http://example.com/
+
+    or to specify email address:
+
+     [MetaResources]
+     bugtracker.mailto=someone@example.com
+
+DESCRIPTION
+    This section plugin is like Pod::Weaver::Section::Bugs, except that it
+    gives RT as the default.
+
+SOURCE
+    The development version is on github at
+    <http://github.com/sharyanto/perl-Pod-Weaver-Section-Bugs-DefaultRT> and
+    may be cloned from
+    <git://github.com/sharyanto/perl-Pod-Weaver-Section-Bugs-DefaultRT.git>
+
+SEE ALSO
+    Pod::Weaver::Section::Bugs which requires us setting "bugtracker"
+    metadata.
+
+    Pod::Weaver::Section::BugsRT which always uses RT.
+
+BUGS
+    Please report any bugs or feature requests on the bugtracker website
+    http://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Weaver-Section-Bugs
+    -De faultRT
+
+    When submitting a bug or request, please include a test-file or a patch
+    to an existing test-file that illustrates the bug or desired feature.
+
+AUTHOR
+    Steven Haryanto <stevenharyanto@gmail.com>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2013 by Steven Haryanto.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
