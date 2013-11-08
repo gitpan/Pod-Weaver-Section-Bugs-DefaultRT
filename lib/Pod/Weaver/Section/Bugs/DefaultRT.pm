@@ -9,7 +9,7 @@ with 'Pod::Weaver::Role::Section';
 
 use Moose::Autobox;
 
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 sub weave_section {
   my ($self, $document, $input) = @_;
@@ -26,12 +26,12 @@ sub weave_section {
   my $text = "Please report any bugs or feature requests ";
 
   if (defined $web) {
-    $text .= "on the bugtracker website $web";
+    $text .= "on the bugtracker website L<$web>";
     $text .= defined $mailto ? " or " : "\n";
   }
 
   if (defined $mailto) {
-    $text .= "by email to $mailto\.\n";
+    $text .= "by email to L<mailto:$mailto>\.\n";
   }
 
   $text = Text::Wrap::wrap(q{}, q{}, $text);
@@ -68,6 +68,10 @@ __END__
 
 Pod::Weaver::Section::Bugs::DefaultRT - Add a BUGS section to refer to bugtracker (or RT as default)
 
+=head1 VERSION
+
+version 0.02
+
 =head1 SYNOPSIS
 
 In your C<weaver.ini>:
@@ -89,10 +93,10 @@ or to specify email address:
 This section plugin is like L<Pod::Weaver::Section::Bugs>, except that it gives
 RT as the default.
 
-=head1 SOURCE
+=head1 FUNCTIONS
 
-The development version is on github at L<http://github.com/sharyanto/perl-Pod-Weaver-Section-Bugs-DefaultRT>
-and may be cloned from L<git://github.com/sharyanto/perl-Pod-Weaver-Section-Bugs-DefaultRT.git>
+
+None are exported by default, but they are exportable.
 
 =for Pod::Coverage weave_section
 
@@ -102,11 +106,19 @@ L<Pod::Weaver::Section::Bugs> which requires us setting C<bugtracker> metadata.
 
 L<Pod::Weaver::Section::BugsRT> which always uses RT.
 
+=head1 HOMEPAGE
+
+Please visit the project's homepage at L<https://metacpan.org/release/Pod-Weaver-Section-Bugs-DefaultRT>.
+
+=head1 SOURCE
+
+Source repository is at L<HASH(0x3638648)>.
+
 =head1 BUGS
 
 Please report any bugs or feature requests on the bugtracker website
-http://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Weaver-Section-Bugs-De
-faultRT
+https://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Weaver-Section-Bugs-D
+efaultRT
 
 When submitting a bug or request, please include a test-file or a
 patch to an existing test-file that illustrates the bug or desired

@@ -4,7 +4,7 @@
       "Steven Haryanto <stevenharyanto@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300039, CPAN::Meta::Converter version 2.132140",
+   "generated_by" : "Dist::Zilla version 4.300038, CPAN::Meta::Converter version 2.132510",
    "license" : [
       "perl_5"
    ],
@@ -46,11 +46,16 @@
    },
    "release_status" : "stable",
    "resources" : {
-      "homepage" : "http://metacpan.org/release/Pod-Weaver-Section-Bugs-DefaultRT",
+      "bugtracker" : {
+         "web" : "https://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Weaver-Section-Bugs-DefaultRT"
+      },
+      "homepage" : "https://metacpan.org/release/Pod-Weaver-Section-Bugs-DefaultRT",
       "repository" : {
-         "url" : "http://github.com/sharyanto/perl-Pod-Weaver-Section-Bugs-DefaultRT"
+         "type" : "git",
+         "url" : "git://github.com/sharyanto/perl-Pod-Weaver-Section-Bugs-DefaultRT.git",
+         "web" : "https://github.com/sharyanto/perl-Pod-Weaver-Section-Bugs-DefaultRT"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
 

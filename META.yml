@@ -10,7 +10,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300039, CPAN::Meta::Converter version 2.132140'
+generated_by: 'Dist::Zilla version 4.300038, CPAN::Meta::Converter version 2.132510'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -22,6 +22,7 @@ requires:
   Pod::Weaver::Role::Section: 0
   perl: 5.010001
 resources:
-  homepage: http://metacpan.org/release/Pod-Weaver-Section-Bugs-DefaultRT
-  repository: http://github.com/sharyanto/perl-Pod-Weaver-Section-Bugs-DefaultRT
-version: 0.01
+  bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Weaver-Section-Bugs-DefaultRT
+  homepage: https://metacpan.org/release/Pod-Weaver-Section-Bugs-DefaultRT
+  repository: git://github.com/sharyanto/perl-Pod-Weaver-Section-Bugs-DefaultRT.git
+version: 0.02

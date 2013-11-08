@@ -2,6 +2,9 @@ NAME
     Pod::Weaver::Section::Bugs::DefaultRT - Add a BUGS section to refer to
     bugtracker (or RT as default)
 
+VERSION
+    version 0.02
+
 SYNOPSIS
     In your "weaver.ini":
 
@@ -22,11 +25,8 @@ DESCRIPTION
     This section plugin is like Pod::Weaver::Section::Bugs, except that it
     gives RT as the default.
 
-SOURCE
-    The development version is on github at
-    <http://github.com/sharyanto/perl-Pod-Weaver-Section-Bugs-DefaultRT> and
-    may be cloned from
-    <git://github.com/sharyanto/perl-Pod-Weaver-Section-Bugs-DefaultRT.git>
+FUNCTIONS
+    None are exported by default, but they are exportable.
 
 SEE ALSO
     Pod::Weaver::Section::Bugs which requires us setting "bugtracker"
@@ -34,10 +34,17 @@ SEE ALSO
 
     Pod::Weaver::Section::BugsRT which always uses RT.
 
+HOMEPAGE
+    Please visit the project's homepage at
+    <https://metacpan.org/release/Pod-Weaver-Section-Bugs-DefaultRT>.
+
+SOURCE
+    Source repository is at HASH(0x3638648).
+
 BUGS
     Please report any bugs or feature requests on the bugtracker website
-    http://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Weaver-Section-Bugs
-    -De faultRT
+    https://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Weaver-Section-Bug
+    s-D efaultRT
 
     When submitting a bug or request, please include a test-file or a patch
     to an existing test-file that illustrates the bug or desired feature.
