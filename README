@@ -3,7 +3,7 @@ NAME
     bugtracker (or RT as default)
 
 VERSION
-    version 0.02
+    version 0.03
 
 SYNOPSIS
     In your "weaver.ini":
@@ -39,12 +39,13 @@ HOMEPAGE
     <https://metacpan.org/release/Pod-Weaver-Section-Bugs-DefaultRT>.
 
 SOURCE
-    Source repository is at HASH(0x3638648).
+    Source repository is at
+    <https://github.com/sharyanto/perl-Pod-Weaver-Section-Bugs-DefaultRT>.
 
 BUGS
     Please report any bugs or feature requests on the bugtracker website
-    https://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Weaver-Section-Bug
-    s-D efaultRT
+    "/rt.cpan.org/Public/Dist/Display.html?Name=Pod-Weaver-Section-Bugs
+    -DefaultRT" in https:
 
     When submitting a bug or request, please include a test-file or a patch
     to an existing test-file that illustrates the bug or desired feature.

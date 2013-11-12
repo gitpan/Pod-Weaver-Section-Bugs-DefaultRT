@@ -2,14 +2,14 @@ package Pod::Weaver::Section::Bugs::DefaultRT;
 
 use 5.010001;
 use Moose;
-use Text::Wrap ();
+#use Text::Wrap ();
 with 'Pod::Weaver::Role::Section';
 
 #use Log::Any '$log';
 
 use Moose::Autobox;
 
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 sub weave_section {
   my ($self, $document, $input) = @_;
@@ -34,7 +34,9 @@ sub weave_section {
     $text .= "by email to L<mailto:$mailto>\.\n";
   }
 
-  $text = Text::Wrap::wrap(q{}, q{}, $text);
+  # disabled temporarily, Text::Wrap wraps "L<blah" + ">". a better wrapping
+  # module is needed.
+  # $text = Text::Wrap::wrap(q{}, q{}, $text);
 
   $text .= <<'HERE';
 
@@ -62,7 +64,7 @@ __END__
 
 =pod
 
-=encoding utf-8
+=encoding UTF-8
 
 =head1 NAME
 
@@ -70,7 +72,7 @@ Pod::Weaver::Section::Bugs::DefaultRT - Add a BUGS section to refer to bugtracke
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
@@ -112,13 +114,13 @@ Please visit the project's homepage at L<https://metacpan.org/release/Pod-Weaver
 
 =head1 SOURCE
 
-Source repository is at L<HASH(0x3638648)>.
+Source repository is at L<https://github.com/sharyanto/perl-Pod-Weaver-Section-Bugs-DefaultRT>.
 
 =head1 BUGS
 
 Please report any bugs or feature requests on the bugtracker website
-https://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Weaver-Section-Bugs-D
-efaultRT
+L<https://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Weaver-Section-Bugs
+-DefaultRT>
 
 When submitting a bug or request, please include a test-file or a
 patch to an existing test-file that illustrates the bug or desired

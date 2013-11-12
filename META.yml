@@ -25,4 +25,4 @@ resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Weaver-Section-Bugs-DefaultRT
   homepage: https://metacpan.org/release/Pod-Weaver-Section-Bugs-DefaultRT
   repository: git://github.com/sharyanto/perl-Pod-Weaver-Section-Bugs-DefaultRT.git
-version: 0.02
+version: 0.03

@@ -6,6 +6,7 @@ META.json
 META.yml
 Makefile.PL
 README
+build.log
 dist.ini
 lib/Pod/Weaver/Section/Bugs/DefaultRT.pm
 t/00-compile.t
